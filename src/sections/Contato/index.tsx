@@ -9,27 +9,30 @@ const Contato = () => {
     },[])
 
     return (
-        <div className={styles.containerContato}>
+        <div className={styles.containerContato} id="contato">
             <div className={styles.containerContatoFilho}>
+                <div>
+                    <div>
+                        <p>Fique à vontade para entrar em contato</p>
+                    </div>
+                </div>
                 <div className={styles.inputs}>
                     <input 
                     type="text"
                     placeholder="Digite seu nome"
                     className={styles.inputNome}
                     />
+
                     <input 
                     type="email"
                     placeholder="Digite seu email"
                     className={styles.inputNome}
                     />
+                    
                     <textarea 
                     className={styles.inputMensagem}
                     />
-                </div>
-                <div>
-                    <div>
-                        <p>Fique avontade para entrar em contato</p>
-                    </div>
+
                     <div>
                         <button>Enviar email</button>
                     </div>

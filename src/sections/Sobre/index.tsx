@@ -4,7 +4,7 @@ import styles from "./style.module.css"
 
 const Apresentacao = () => {
     return (
-        <div className={styles.Apresentacao}>
+        <div className={styles.Apresentacao} id="sobre">
             <div className={styles.sobre}>
                 <div style={{display:"flex", alignItems:"center", fontSize:"64px", fontWeight:600, height:"140px"}}><p>Seja bem vindo</p> <img height={100} src={tag}/></div>
                 <div style={{fontSize:"32px", display:"flex", flexDirection:"column"}}>

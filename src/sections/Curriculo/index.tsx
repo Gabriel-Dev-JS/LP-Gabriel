@@ -3,8 +3,8 @@ import styles from "./style.module.css"
 
 const Curriculo = () => {
     return (
-        <div className={styles.containerCurriculo}>
-           <div>
+        <div className={styles.containerCurriculo} id="curriculo">
+            <div>
             <div style={{display:"flex", justifyContent:"space-between"}}>
              <p className={styles.titulo}>Habilidades</p>
             <div className={styles.buttonCv}><a href={curriculo} download>Baixar Curriculo</a></div>
