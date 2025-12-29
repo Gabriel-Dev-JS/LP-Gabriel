@@ -1,0 +1,36 @@
+.containerContato {
+    width: 100%;
+    height: 500px;
+    margin-top: 160px;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerContatoFilho {
+    background-color: #FFFF;
+    border-radius: 8px;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.inputNome {
+    height: 60px;
+}
+
+.inputMensagem {
+    height: 300px;
+}

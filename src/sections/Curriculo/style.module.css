@@ -1,0 +1,21 @@
+.containerCurriculo {
+    width: 100%;
+    height: 800px;
+    background-color: #FFFF;
+    color: var(--preto);
+    margin-left: 40px;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.conteudo {
+    margin: 0;
+    padding: 0;
+}
+
+.buttonCv {
+    margin-top: 20px;
+}
