@@ -19,3 +19,30 @@
 .buttonCv {
     margin-top: 20px;
 }
+
+.habilidades {
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+    .containerCurriculo {
+        margin-left: 0px;
+        height: 1240px;
+        /* padding: 0px 4px; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+    
+    .containerFilho {
+        width: 90%;
+        padding: 0px 8px;
+    }
+
+    .conteudo {
+        font-size: 16px;
+    }
+}
