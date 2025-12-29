@@ -1,3 +1,5 @@
+import { FaGithubSquare } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 import styles from "./style.module.css"
 
 const Header = () => {
@@ -12,12 +14,18 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <ul>
-                <li onClick={()=> scroll("#sobre")}>Sobre</li>
-                <li onClick={()=> scroll("#projetos")}>Projetos</li>
-                <li onClick={()=> scroll("#curriculo")}>Curriculo</li>
-                <li onClick={()=> scroll("#contato")}>Contato</li>
-            </ul>
+            <div>
+                <ul>
+                    <li onClick={()=> scroll("#sobre")}>Sobre</li>
+                    <li onClick={()=> scroll("#projetos")}>Projetos</li>
+                    <li onClick={()=> scroll("#curriculo")}>Curriculo</li>
+                    <li onClick={()=> scroll("#contato")}>Contato</li>
+                </ul>
+            </div>
+            <div className={styles.containerIcone}>
+                <FaGithubSquare className={styles.icones}/>
+                <CiLinkedin className={styles.icones}/>
+            </div>
         </div>
     )
 }

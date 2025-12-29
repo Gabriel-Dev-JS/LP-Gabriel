@@ -1,9 +1,11 @@
 .header {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 40px 20px 40px;
     padding: 20px;
     font-size: 20px;
     font-weight: 600;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
@@ -17,4 +19,23 @@ ul {
 ul li:hover {
     cursor: pointer;
     color: var(--cinza_claro);
+}
+
+.containerIcone {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones {
+    width: 40px;
+    height: 40px;
+}
+
+.icones:hover{
+    scale: calc(1.2);
+}
+
+@media (max-width:768px) {
+    
 }
