@@ -10,9 +10,11 @@ interface CardProps {
 const Card = ({titulo, conteudo, tecnologia}:CardProps) => {
     return (
         <div className={styles.containerCard}>
-            <header className={styles.titulo}><h3>{titulo}</h3></header>
-            <section className={styles.conteudo}>{conteudo}</section>
-            <footer className={styles.tecnologia}>{tecnologia}</footer>
+            <div className={styles.containerCardFilho}>
+                <header className={styles.titulo}><h3>{titulo}</h3></header>
+                <section className={styles.conteudo}>{conteudo}</section>
+                <footer className={styles.tecnologia}>{tecnologia}</footer>
+            </div>
         </div>
     )
 }
