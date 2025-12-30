@@ -16,8 +16,23 @@
     padding: 0;
 }
 
-.buttonCv {
+/* .buttonCv {
     margin-top: 20px;
+    border: solid 1px var(--preto);
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #f7f0f000;
+    background-color: #f7f0f000;
+} */
+
+/* .buttonCv a {
+    color: var(--preto)
+} */
+
+.iconeDownload {
+    width: 32px;
+    height: 32px;
+    color: var(--preto);
 }
 
 .habilidades {
@@ -48,8 +63,13 @@
         font-size: 16px;
     }
 
-    .buttonCv {
-        margin: 0;
+    .iconeDownload {
+        width: 24px;
+        height: 24px;
     }
+
+    /* .buttonCv {
+        margin: 0;
+    } */
 
 }
