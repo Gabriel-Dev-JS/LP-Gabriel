@@ -3,4 +3,16 @@
     height: 400px;
     background-color: #FFFF;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+/* .titulo {
+    
+}
+
+.conteudo {
+
+} */

@@ -38,6 +38,10 @@
   gap: 24px;
 }
 
+.containerIconesMobile a {
+  color: #FFFF
+}
+
 .containerModal {
   width: 50%;
 }
