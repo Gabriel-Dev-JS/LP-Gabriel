@@ -9,10 +9,14 @@
     justify-content: center;
 }
 
-/* .titulo {
-    
+.titulo {
+    /* height: 30%; */
 }
 
 .conteudo {
+    height: 30%;
+}
 
-} */
+.tecnologia {
+    height: 30%;
+}

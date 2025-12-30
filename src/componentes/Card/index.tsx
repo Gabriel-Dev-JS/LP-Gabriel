@@ -4,13 +4,15 @@ import styles from "./style.module.css";
 interface CardProps {
   titulo: string;
   conteudo: ReactNode;
+  tecnologia: ReactNode;
 }
 
-const Card = ({titulo, conteudo}:CardProps) => {
+const Card = ({titulo, conteudo, tecnologia}:CardProps) => {
     return (
         <div className={styles.containerCard}>
-            <div className={styles.titulo}>{titulo}</div>
-            <div className={styles.conteudo}>{conteudo}</div>
+            <header className={styles.titulo}><h3>{titulo}</h3></header>
+            <section className={styles.conteudo}>{conteudo}</section>
+            <footer className={styles.tecnologia}>{tecnologia}</footer>
         </div>
     )
 }
