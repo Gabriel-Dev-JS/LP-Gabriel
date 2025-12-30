@@ -19,6 +19,7 @@
 .header ul li:hover {
     cursor: pointer;
     color: var(--cinza_claro);
+    scale: calc(1.1);
 }
 
 .containerIcone {
