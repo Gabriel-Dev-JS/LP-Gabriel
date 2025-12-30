@@ -18,7 +18,8 @@ const Projetos = () => {
     const projetos:Projeto[] = [
         {
             titulo: "Gym Planner",
-            conteudo: "Foi um projeto feito na faculdade, na materia de desenvolvimento de aplicaçãoes rapidas em flask, este trabalho foi feito em 3 pessoas, onde eu atuei no backend, outro colega no front-end e o terceito sendo PO levantando requisitos e criando os cards no trello.",
+            conteudo: "É um gerenciador de treinos de academia, o professor cria os exercicios e o aluno tem acesso, no login possui uma validação para identificar se o usuario é professor ou aluno.",
+            // conteudo: "Foi um projeto feito na faculdade, na materia de desenvolvimento de aplicaçãoes rapidas em flask, este trabalho foi feito em 3 pessoas, onde eu atuei no backend, outro colega no front-end e o terceito sendo PO levantando requisitos e criando os cards no trello.",
             tecnologias: [<SiFlask />, <SiSqlite />, <IoLogoHtml5 />, <FaCss3Alt />, <IoLogoJavascript />]
             // tecnologias: ["Flask", "SQLite", "HTML", "CSS", "JavaScript"]
         },
@@ -30,7 +31,7 @@ const Projetos = () => {
         },
         {
             titulo: "Organizador Financeiro",
-            conteudo: "Este projeto foi criado para que eu pudesse estudar e me aprofundar em testes (integração e unitario) e docker, criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês",
+            conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, ajudando nassim no controle dos gastos mensais",
             tecnologias: [<SiExpress />, <FaNode />, <BiLogoTypescript />, <BiLogoPostgresql />, <SiPrisma />, <FaDocker />, <SiJest />]
             // tecnologias: ["express.js", "Node.js", "Typescript", "Postgres", "Prisma", "docker", "jest"]
         }
