@@ -62,11 +62,11 @@ const Projetos = () => {
             
             {isMobile ? (
             <Swiper
-                modules={[Navigation, Pagination]}
-                navigation
+                modules={[Pagination, Navigation]}
                 pagination={{ clickable: true }}
                 loop={true}
                 slidesPerView={1}
+                navigation
             >
                 {projetos.map((projeto) => (
                 // <SwiperSlide key={projeto.titulo}>

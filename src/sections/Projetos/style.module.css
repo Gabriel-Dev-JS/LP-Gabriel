@@ -33,6 +33,7 @@
 @media(max-width:768px) {
     .containerProjeto {
         align-items: center;
+        margin-bottom: 40px;
     }
 
     /* .meuSwiper {
@@ -43,6 +44,11 @@
     :global(.swiper-wrapper .swiper-slide) {
         display: flex;
         justify-content: center;
+    }
+    
+    :global(.swiper-button-prev svg),
+    :global(.swiper-button-next svg) { 
+    /* display: none; */
     }
 
     :global(.swiper-pagination-clickable .swiper-pagination-bullet) {
