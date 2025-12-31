@@ -1,5 +1,7 @@
 .containerCard {
-    width: 440px;
+    /* width: 440px; */
+    width: 25%;
+    max-width: 400px;
     /* height: 440px; */
     height: 300px;
     background-color: #FFFF;
@@ -22,15 +24,22 @@
     
 }
 
-.titulo {
-    /*height: 30%;*/
-}
+/* .titulo {
+    height: 30%;
+} */
 
 .conteudo {
-    height: 30%;
+    height: 40%;
+    text-align: center;
 }
 
 .tecnologia {
-    height: 30%;
+    height: 15%;
     width: 100%;
+}
+
+@media(max-width: 768px) {
+    .containerCard {
+        width: 90%;
+    }
 }
