@@ -59,8 +59,10 @@ const Projetos:React.FC = () => {
     ]
 
     return(
-        <div className={styles.containerProjeto} id="projetos">
-            {isMobile && <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p>}
+        <div className={styles.projetos} id="projetos">
+            {/* <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p> */}
+            <p className={styles.tituloProjeto}>PROJETOS</p>
+            {/* {isMobile && <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p>} */}
             {isMobile ? (
             <Swiper
                 modules={[Pagination, Navigation]}

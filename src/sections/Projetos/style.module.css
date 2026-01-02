@@ -9,6 +9,12 @@
     margin: 40px 0px 40px 0px;
 }
 
+.projetos {
+    height: 460px;
+    background-color: black;
+    margin-bottom: 40px;
+}
+
 .listaTecnologias {
     width: 100%;
     list-style: none;
@@ -30,7 +36,16 @@
     height: 24px;
 }
 
+.tituloProjeto {
+    text-align:center; 
+    color:white; 
+    margin:24px 0px 24px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
 @media(max-width:768px) {
+    
     .containerProjeto {
         display: block;
         /* align-items: center;
@@ -39,6 +54,14 @@
         height: 460px;
         /* margin-bottom: 40px; */
         margin: 0px;
+    }
+    
+    .tituloProjeto {
+        text-align:center; 
+        color:white; 
+        margin:24px 0px 24px 0px; 
+        font-weight:600;
+        font-size: 32px;
     }
 
     /* .meuSwiper {

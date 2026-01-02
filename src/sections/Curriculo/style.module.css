@@ -41,6 +41,11 @@
     align-items: center;
 }
 
+.tituloCurriculo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
 
 @media (max-width: 768px) {
     .containerCurriculo {
@@ -66,6 +71,12 @@
     .iconeDownload {
         width: 24px;
         height: 24px;
+    }
+
+    .tituloCurriculo {
+        padding: 0px 8px;
+        font-size: 36px;
+        font-weight: 600;
     }
 
     /* .buttonCv {
