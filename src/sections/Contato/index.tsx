@@ -1,45 +1,54 @@
-import emailjs from "@emailjs/browser"
-import { useEffect } from "react"
 import styles from "./style.module.css"
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
-const Contato = () => {
+export const Contato: React.FC = () => {
+  const form = useRef<HTMLFormElement | null>(null);
 
-    useEffect(()=> {
-        emailjs.init(import.meta.env.VITE_MESSAGE_KEY_PUBLIC)
-    },[])
+  const enviarEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    return (
-        <div className={styles.containerContato} id="contato">
-            <div className={styles.containerContatoFilho}>
-                <div>
-                    <div>
-                        <p>Fique à vontade para entrar em contato</p>
-                    </div>
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        'service_0de6h8i', 
+        'template_iouqx5e',
+        form.current,
+        {
+          publicKey: 'bZtrvY14rUGGdMWOK',
+        }
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          //essa função ainda não foi testado (é para apagar os campos do formulario)
+          e.currentTarget.reset();
+        },
+        (error: { text: string }) => {
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
+
+  return (
+    <div className={styles.containerContato} id="contato">
+        <div className={styles.containerContatoFilho}>
+            <form ref={form} onSubmit={enviarEmail} className={styles.containerForm}>
+                <div className={styles.inputEmail}>
+                    <input type="text" name="name" placeholder="Nome" className={styles.email}/>
+                    <input type="email" name="email" placeholder="Email" className={styles.email}/>
                 </div>
-                <div className={styles.inputs}>
-                    <input 
-                    type="text"
-                    placeholder="Digite seu nome"
-                    className={styles.inputNome}
-                    />
-
-                    <input 
-                    type="email"
-                    placeholder="Digite seu email"
-                    className={styles.inputNome}
-                    />
-                    
-                    <textarea 
-                    className={styles.inputMensagem}
-                    />
-
-                    <div>
-                        <button>Enviar email</button>
-                    </div>
+                <div className={styles.inputTextArea}>
+                    <textarea className={styles.area} name="message" placeholder="Olá, gostaria de dizer algo ?"/>
                 </div>
-            </div>
+                <div className={styles.inputBtn}>
+                    <input type="submit" value="Enviar Email" className={styles.btnEmail}/>
+                </div>
+            </form>
         </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Contato

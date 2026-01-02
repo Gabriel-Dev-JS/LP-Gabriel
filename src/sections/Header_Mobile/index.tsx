@@ -5,7 +5,7 @@ import { HiMenu } from "react-icons/hi";
 import MyModal from "./MyModal";
 import styles from "./style.module.css";
 
-const HeaderMobile = () => {
+const HeaderMobile:React.FC = () => {
 
   const [openModal, setOpenModal] = useState<boolean>(false)
 

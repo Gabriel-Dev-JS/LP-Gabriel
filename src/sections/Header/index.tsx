@@ -2,7 +2,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithubSquare } from "react-icons/fa";
 import styles from "./style.module.css";
 
-const Header = () => {
+const Header:React.FC = () => {
 
     const scroll = (ids:string) => {
         const idsConteudo = document.querySelector(`${ids}`)

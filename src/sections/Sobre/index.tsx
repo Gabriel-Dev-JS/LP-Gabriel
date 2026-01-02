@@ -2,7 +2,7 @@ import avatar from "../../images/Avatar-Gabriel-Fundo-Branco.png"
 import tag from "../../images/chaves-html.png"
 import styles from "./style.module.css"
 
-const Apresentacao = () => {
+const Apresentacao:React.FC = () => {
     return (
         <div className={styles.Apresentacao} id="sobre">
             <div className={styles.sobre}>

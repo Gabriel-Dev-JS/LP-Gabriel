@@ -2,7 +2,7 @@ import { BsDownload } from "react-icons/bs"
 import curriculo from "./Curriculo.pdf"
 import styles from "./style.module.css"
 
-const Curriculo = () => {
+const Curriculo:React.FC = () => {
     return (
         <div className={styles.containerCurriculo} id="curriculo">
             <div className={styles.containerFilho}>

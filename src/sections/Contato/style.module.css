@@ -11,7 +11,8 @@
 .containerContatoFilho {
     background-color: #FFFF;
     border-radius: 8px;
-    width: 1200px;
+    /* width: 1200px; */
+    width: 600px;
     height: 400px;
     display: flex;
     justify-content: space-around;
@@ -34,3 +35,57 @@
 .inputMensagem {
     height: 300px;
 }
+
+.containerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    /* justify-content: center; */
+}
+
+.inputEmail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    width: 45%;
+    height: 24px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.inputTextArea {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.area {
+    width: 100%;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.inputBtn {
+    width: 100%;
+}
+
+.btnEmail {
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #FFFF;
+    color: var(--preto);
+}
+
+/* .inputBtn {
+    width: 100%;
+    display: flex;
+    background-color: red;
+} */

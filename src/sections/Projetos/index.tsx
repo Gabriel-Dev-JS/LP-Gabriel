@@ -7,13 +7,14 @@ import { SiExpress, SiFlask, SiJest, SiPrisma, SiSqlite } from "react-icons/si";
 
 import Card from "../../componentes/Card";
 import styles from "./style.module.css";
-
-import 'swiper/css';
-// import 'swiper/css/navigation';
-import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// import 'swiper/css/navigation';
+//@ts-ignore
+import 'swiper/css';
+//@ts-ignore
+import "swiper/css/pagination";
 
 interface Projeto {
     titulo: string;
@@ -21,7 +22,7 @@ interface Projeto {
     tecnologias: ReactNode[];
 }
 
-const Projetos = () => {
+const Projetos:React.FC = () => {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
