@@ -24,9 +24,12 @@
     
 }
 
-/* .titulo {
-    height: 30%;
-} */
+.titulo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .conteudo {
     height: 40%;
@@ -36,6 +39,15 @@
 .tecnologia {
     height: 15%;
     width: 100%;
+}
+
+.iconLink {
+    color: var(--preto);    
+}
+
+.iconLink:hover {
+    cursor: pointer;
+    color: var(--cinza_claro)
 }
 
 @media(max-width: 768px) {

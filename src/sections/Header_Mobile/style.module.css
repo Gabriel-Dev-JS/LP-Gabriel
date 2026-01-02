@@ -6,6 +6,7 @@
   background-color: var(--preto);
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 
 .modal {
