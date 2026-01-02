@@ -57,6 +57,7 @@
     height: 24px;
     border-radius: 4px;
     padding: 4px;
+    border: solid 2px var(--preto);
 }
 
 .inputTextArea {
@@ -70,6 +71,7 @@
     width: 100%;
     border-radius: 4px;
     padding: 12px;
+    border: solid 2px var(--preto);
 }
 
 .inputBtn {
@@ -82,6 +84,8 @@
     border-radius: 4px;
     background-color: #FFFF;
     color: var(--preto);
+    background-color: #FFFF;
+    border: solid 2px var(--preto);
 }
 
 /* .inputBtn {
@@ -89,3 +93,13 @@
     display: flex;
     background-color: red;
 } */
+
+@media(max-width: 768px) {
+    .containerContatoFilho {
+        width: 90%;
+    }
+
+    .btnEmail {
+        width: 100%;
+    }
+}
