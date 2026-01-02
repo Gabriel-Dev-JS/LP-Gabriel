@@ -1,16 +1,26 @@
+import { useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithubSquare } from "react-icons/fa";
+import { HiMenu } from "react-icons/hi";
+import MyModal from "./MyModal";
 import styles from "./style.module.css";
 
 const HeaderMobile = () => {
+
+  const [openModal, setOpenModal] = useState<boolean>(false)
+
   return (
     <div className={styles.containerHeaderMobile}>
       <div className={styles.containerModal}>
-        <div className={styles.modal}>
+        {/* <HiMenu className={styles.iconesMobile} onClick={()=> openModal}/> */}
+        {/* <Modal/> */}
+        <HiMenu className={styles.iconesMobile} onClick={()=> setOpenModal(!openModal)}/>
+        <MyModal openModal={openModal} setOpenMOdal={setOpenModal}/>
+        {/* <div className={styles.modal}>
           <div className={styles.linhas}></div>
           <div className={styles.linhas}></div>
           <div className={styles.linhas}></div>
-        </div>
+        </div> */}
       </div>
       <div className={styles.containerIconesMobile}>
         <a href="https://github.com/Gabriel-Dev-JS" target="_blank">

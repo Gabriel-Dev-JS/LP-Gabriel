@@ -59,7 +59,7 @@ const Projetos = () => {
 
     return(
         <div className={styles.containerProjeto} id="projetos">
-            
+            {isMobile && <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p>}
             {isMobile ? (
             <Swiper
                 modules={[Pagination, Navigation]}

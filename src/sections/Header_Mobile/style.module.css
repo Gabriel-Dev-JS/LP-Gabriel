@@ -1,6 +1,9 @@
 .containerHeaderMobile {
   width: 100vw;
   height: 80px;
+  position: fixed;
+  top: 0px;
+  background-color: var(--preto);
   display: flex;
   align-items: center;
 }
@@ -44,4 +47,46 @@
 
 .containerModal {
   width: 50%;
+  margin-left: 20px;
+  color: #FFFF;
 }
+
+
+
+.containerMyModal {
+  width: 140px;
+  height: 400px;
+  position: fixed;
+  top: 30px;
+  background-color: var(--cinza_claro);
+  display: none;
+}
+
+.containerMyModalOpen {
+  width: 140px;
+  height: 320px;
+  background-color: var(--cinza_claro);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+}
+
+.iconClose {
+  display: flex; 
+  justify-content: flex-end; 
+  margin:14px 6px 14px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
