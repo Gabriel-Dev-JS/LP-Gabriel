@@ -5,14 +5,16 @@ import { FaCss3Alt, FaDocker, FaNode } from "react-icons/fa";
 import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
 import { SiExpress, SiFlask, SiJest, SiPrisma, SiSqlite } from "react-icons/si";
 
-import Card from "../../componentes/Card";
-import styles from "./style.module.css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Card from "../../componentes/Card";
+import styles from "./style.module.css";
 
 // import 'swiper/css/navigation';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import 'swiper/css';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import "swiper/css/pagination";
 
@@ -46,13 +48,13 @@ const Projetos:React.FC = () => {
         },
         {
             titulo: "Backend ToDo", 
-            conteudo: "Backend de um ToDo que eu criei para organizar o meu dia, projeto caseiro e de rapido desenvolvimento criado para o intuito auxiliar nas minhas tarefas diarias",
+            conteudo: "Backend de um ToDo que eu criei para organizar o meu dia, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <SiSqlite className={styles.iconesTecnologias}/>],
             link: "https://github.com/Gabriel-Dev-JS/Backend-ToDo"
         },
         {
             titulo: "Organizador Financeiro",
-            conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, ajudando nassim no controle dos gastos mensais",
+            conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, para o melhor controle dos gastos mensais",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <BiLogoPostgresql className={styles.iconesTecnologias}/>, <SiPrisma className={styles.iconesTecnologias}/>, <FaDocker className={styles.iconesTecnologias}/>, <SiJest className={styles.iconesTecnologias}/>],
             link: "https://github.com/Gabriel-Dev-JS/organizador_financeiro"
         }

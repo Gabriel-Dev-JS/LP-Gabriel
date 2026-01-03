@@ -1,7 +1,7 @@
 .containerContato {
     width: 100%;
     height: 500px;
-    margin-top: 160px;
+    margin-top: 260px;
     background-color: var(--preto);
     display: flex;
     align-items: center;
@@ -15,7 +15,8 @@
     width: 600px;
     height: 400px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .inputs {
@@ -38,16 +39,18 @@
 
 .containerForm {
     width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 24px;
-    padding: 24px;
-    /* justify-content: center; */
+    /* padding: 24px; */
+    /* padding: 12px; */
 }
 
 .inputEmail {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -61,7 +64,7 @@
 }
 
 .inputTextArea {
-    width: 100%;
+    width: 90%;
     height: 80%;
     display: flex;
     justify-content: center;
@@ -69,13 +72,14 @@
 
 .area {
     width: 100%;
+    height: 120px;
     border-radius: 4px;
     padding: 12px;
     border: solid 2px var(--preto);
 }
 
 .inputBtn {
-    width: 100%;
+    width: 90%;
 }
 
 .btnEmail {
@@ -88,18 +92,39 @@
     border: solid 2px var(--preto);
 }
 
+.tituloCurriculo {
+    padding: 0px 30px;
+}
+
 /* .inputBtn {
     width: 100%;
     display: flex;
     background-color: red;
 } */
 
+@media(min-width: 1900px) {
+    .containerContato {
+        margin-top: 480px;
+    }
+}
+
 @media(max-width: 768px) {
+
     .containerContatoFilho {
         width: 90%;
     }
 
     .btnEmail {
         width: 100%;
+    }
+
+    .tituloCurriculo {
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width: 380px) {
+    .containerContato {
+        margin-top: 200px;
     }
 }

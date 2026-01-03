@@ -50,6 +50,26 @@
     color: var(--cinza_claro)
 }
 
+@media(min-width: 1900px) {
+    .containerCard {
+        width: 50%;
+    }
+
+    .conteudo {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:768px) and (max-width: 900px) {
+    .containerProjeto {
+        gap: 40px;
+    }
+    
+    .containerCard {
+        width: 27%;
+    }
+}
+
 @media(max-width: 768px) {
     .containerCard {
         width: 90%;
