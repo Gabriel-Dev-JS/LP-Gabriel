@@ -16,8 +16,10 @@ const Curriculo:React.FC = () => {
                 <p className={styles.conteudo}> -Desenvolvimento front-end (React, Typescript, VTEX Legacy e FastStore)</p>
                 <p className={styles.conteudo}> -Criação de landing pages e componentes reutilizáveis</p>
                 <p className={styles.conteudo}> -Integração com APIs REST</p>
-                <p className={styles.conteudo}> -Desenvolvimento backend com Node.js (Express) e Python (Flask)</p>
+                <p className={styles.conteudo}> -Testes unitários e de integração com Jest</p>
+                <p className={styles.conteudo}> -Desenvolvimento backend com Node.js (Express e NestJS) e Python (Flask)</p>
                 <p className={styles.conteudo}> -Banco de dados relacionais (MySQL, PostgreSQL, SQLite)</p>
+                <p className={styles.conteudo}> -Containerização de aplicações com Docker</p>
                 <p className={styles.conteudo}> -Versionamento de código com Git</p>
                 </div>
                 <div>

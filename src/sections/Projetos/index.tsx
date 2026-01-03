@@ -48,7 +48,8 @@ const Projetos:React.FC = () => {
         },
         {
             titulo: "Backend ToDo", 
-            conteudo: "Backend de um ToDo que eu criei para organizar o meu dia, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
+            conteudo: "Backend de um ToDo, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
+            // conteudo: "Backend de um ToDo que eu criei para organizar minha rotina, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <SiSqlite className={styles.iconesTecnologias}/>],
             link: "https://github.com/Gabriel-Dev-JS/Backend-ToDo"
         },
