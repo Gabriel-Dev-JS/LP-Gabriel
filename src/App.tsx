@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import Contato from './sections/Contato'
 import Curriculo from './sections/Curriculo'
@@ -18,6 +20,7 @@ function App() {
         <Projetos />
         <Curriculo />
         <Contato />
+        <ToastContainer />
       </div>
     </div>
   )
