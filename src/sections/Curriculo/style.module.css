@@ -46,10 +46,23 @@
     font-weight: 600;
 }
 
+@media(min-width:2500px) {
+    .containerCurriculo {
+        margin-top: 350px;
+    }
+}
+
 @media(min-width: 1900px) {
    .conteudo {
     font-size: 24px;
    }
+}
+
+@media(min-width:800px) and (max-width: 900px) {
+    .containerCurriculo {
+        margin-top: 80px;
+        margin-left: 40px;
+    }
 }
 
 

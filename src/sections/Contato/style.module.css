@@ -110,6 +110,10 @@
 
 @media(max-width: 768px) {
 
+    .containerContato {
+        margin-top: 160px;
+    }
+
     .containerContatoFilho {
         width: 90%;
     }

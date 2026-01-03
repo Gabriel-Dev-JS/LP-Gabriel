@@ -50,7 +50,14 @@
     color: var(--cinza_claro)
 }
 
-@media(min-width: 1900px) {
+@media(min-width:2500px) {
+    .containerCard {
+        width: 400px;
+    }
+}
+
+
+@media(min-width: 1900px) and (max-width: 2200px) {
     .containerCard {
         width: 50%;
     }
