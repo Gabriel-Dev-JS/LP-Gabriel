@@ -4,6 +4,7 @@
     background-color: #FFFF;
     color: var(--preto);
     margin-left: 80px;
+    margin-bottom: 280px;
 }
 
 .titulo {
@@ -56,6 +57,10 @@
    .conteudo {
     font-size: 24px;
    }
+
+   .containerCurriculo {
+    margin-bottom: 480px;
+   }
 }
 
 @media(min-width:800px) and (max-width: 900px) {
@@ -68,6 +73,7 @@
 
 @media (max-width: 768px) {
     .containerCurriculo {
+        margin-bottom: 180px;
         margin-left: 0px;
         width: 100%;
         height: 1240px;
@@ -101,4 +107,10 @@
     /* .buttonCv {
         margin: 0;
     } */
+}
+
+@media(max-width: 380px) {
+    .containerCurriculo {
+        margin-bottom: 250px;
+    }
 }
