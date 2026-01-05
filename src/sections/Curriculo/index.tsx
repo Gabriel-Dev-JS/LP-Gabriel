@@ -5,8 +5,8 @@ import styles from "./style.module.css"
 const Curriculo:React.FC = () => {
     return (
         <div className={styles.containerCurriculo} id="curriculo">
-            <h3 className={styles.tituloCurriculo}>Curriculo</h3>
             <div className={styles.containerFilho}>
+                <h3 className={styles.tituloCurriculo}>Curriculo</h3>
                 <div>
                 <div className={styles.habilidades}>
                 <p className={styles.titulo}>Habilidades</p>
