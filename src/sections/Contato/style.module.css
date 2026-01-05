@@ -87,10 +87,16 @@
     width: 140px;
     height: 40px;
     border-radius: 4px;
-    background-color: #FFFF;
     color: var(--preto);
-    background-color: #FFFF;
+    background-color: #cccccc;
     border: solid 2px var(--preto);
+    /* background-color: #FFFF; */
+    /* background-color: #b5b5b5; */
+}
+
+.btnEmail:hover {
+    cursor: pointer;
+    scale: calc(1.05);
 }
 
 .tituloCurriculo {
@@ -127,7 +133,8 @@
         padding: 0px 20px;
     }
 
-    .email, .btnEmail {
+    .email, .area {
+        color: var(--preto);
         background-color: #FFFF;
     }
 }
