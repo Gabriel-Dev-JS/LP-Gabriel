@@ -126,6 +126,10 @@
     .tituloCurriculo {
         padding: 0px 20px;
     }
+
+    .email, .btnEmail {
+        background-color: #FFFF;
+    }
 }
 
 /* @media(max-width: 380px) {
