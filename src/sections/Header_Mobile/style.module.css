@@ -1,12 +1,13 @@
 .containerHeaderMobile {
   width: 100vw;
   height: 80px;
-  position: fixed;
+  position: sticky;
+  /* position: fixed; */
   top: 0px;
   background-color: var(--preto);
   display: flex;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .modal {
