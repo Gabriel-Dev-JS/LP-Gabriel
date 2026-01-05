@@ -5,6 +5,7 @@
     color: var(--preto);
     margin-left: 80px;
     margin-bottom: 280px;
+    z-index: 1000;
 }
 
 .titulo {
