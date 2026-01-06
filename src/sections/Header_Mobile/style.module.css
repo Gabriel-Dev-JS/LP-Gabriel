@@ -2,7 +2,6 @@
   width: 100vw;
   height: 80px;
   position: sticky;
-  /* position: fixed; */
   top: 0px;
   background-color: var(--preto);
   display: flex;
@@ -14,8 +13,6 @@
   width: 60px;
   height: 60px;
   margin-left: 20px;
-  /* border: #FFFF solid 1px;
-  border-radius: 4px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,16 +76,3 @@
   justify-content: flex-end; 
   margin:14px 6px 14px 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

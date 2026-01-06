@@ -1,7 +1,6 @@
 .containerContato {
     width: 100%;
     height: 500px;
-    /* margin-top: 280px; */
     background-color: var(--preto);
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@
 .containerContatoFilho {
     background-color: #FFFF;
     border-radius: 8px;
-    /* width: 1200px; */
     width: 600px;
     height: 400px;
     display: flex;
@@ -46,8 +44,6 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
-    /* padding: 24px; */
-    /* padding: 12px; */
 }
 
 .inputEmail {
@@ -90,8 +86,6 @@
     color: var(--preto);
     background-color: #cccccc;
     border: solid 2px var(--preto);
-    /* background-color: #FFFF; */
-    /* background-color: #b5b5b5; */
 }
 
 .btnEmail:hover {
@@ -103,23 +97,7 @@
     padding: 0px 30px;
 }
 
-/* .inputBtn {
-    width: 100%;
-    display: flex;
-    background-color: red;
-} */
-
-/* @media(min-width: 1900px) {
-    .containerContato {
-        margin-top: 480px;
-    }
-} */
-
 @media(max-width: 768px) {
-
-    /* .containerContato {
-        margin-top: 180px;
-    } */
 
     .containerContatoFilho {
         width: 90%;
@@ -138,9 +116,3 @@
         background-color: #FFFF;
     }
 }
-
-/* @media(max-width: 380px) {
-    .containerContato {
-        margin-top: 250px;
-    }
-} */

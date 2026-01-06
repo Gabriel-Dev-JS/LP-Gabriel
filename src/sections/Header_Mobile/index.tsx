@@ -12,15 +12,8 @@ const HeaderMobile:React.FC = () => {
   return (
     <div className={styles.containerHeaderMobile}>
       <div className={styles.containerModal}>
-        {/* <HiMenu className={styles.iconesMobile} onClick={()=> openModal}/> */}
-        {/* <Modal/> */}
         <HiMenu className={styles.iconesMobile} onClick={()=> setOpenModal(!openModal)}/>
         <MyModal openModal={openModal} setOpenMOdal={setOpenModal}/>
-        {/* <div className={styles.modal}>
-          <div className={styles.linhas}></div>
-          <div className={styles.linhas}></div>
-          <div className={styles.linhas}></div>
-        </div> */}
       </div>
       <div className={styles.containerIconesMobile}>
         <a href="https://github.com/Gabriel-Dev-JS" target="_blank">

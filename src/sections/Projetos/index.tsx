@@ -49,7 +49,6 @@ const Projetos:React.FC = () => {
         {
             titulo: "Backend ToDo", 
             conteudo: "Backend de um ToDo, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
-            // conteudo: "Backend de um ToDo que eu criei para organizar minha rotina, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <SiSqlite className={styles.iconesTecnologias}/>],
             link: "https://github.com/Gabriel-Dev-JS/Backend-ToDo"
         },
@@ -63,9 +62,7 @@ const Projetos:React.FC = () => {
 
     return(
         <div className={styles.projetos} id="projetos">
-            {/* <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p> */}
             <p className={styles.tituloProjeto}>PROJETOS</p>
-            {/* {isMobile && <p style={{textAlign:"center", margin:"24px 0px 24px 0px", color:"white", fontWeight:"600"}}>PROJETOS</p>} */}
             {isMobile ? (
             <Swiper
                 modules={[Pagination, Navigation]}
@@ -75,7 +72,6 @@ const Projetos:React.FC = () => {
                 navigation
             >
                 {projetos.map((projeto) => (
-                // <SwiperSlide key={projeto.titulo}>
                 <SwiperSlide className={styles.meuSwiper} key={projeto.titulo}>
                     <Card
                     titulo={projeto.titulo}
@@ -111,25 +107,6 @@ const Projetos:React.FC = () => {
                 ))}
             </div>
             )}
-
-            
-            {/* {projetos.map((projeto) => (
-                <Card
-                    key={projeto.titulo}
-                    titulo={projeto.titulo}
-                    conteudo={projeto.conteudo}
-                    tecnologia={
-                    <ul className={styles.listaTecnologias}>
-                        {projeto.tecnologias.map((tech, index) => (
-                        <li key={index}>{tech}</li>
-                        ))}
-                    </ul>
-                    }
-                >
-                </Card>
-            ))} */}
-            {/* <Card titulo={"teste 2"} conteudo={<p>teste</p>}/>
-            <Card titulo={"teste 3"} conteudo={<p>teste</p>}/> */}
         </div>
     )
 }

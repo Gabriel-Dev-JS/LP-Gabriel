@@ -11,7 +11,6 @@ const Curriculo:React.FC = () => {
                 <div className={styles.habilidades}>
                 <p className={styles.titulo}>Habilidades</p>
                 <div className={styles.buttonCv}><a href={curriculo} download><BsDownload className={styles.iconeDownload}/></a></div>
-                {/* <div className={styles.buttonCv}><a href={curriculo} download>Baixar Curriculo</a></div> */}
                 </div>
                 <p className={styles.conteudo}> -Desenvolvimento front-end (React, Typescript, VTEX Legacy e FastStore)</p>
                 <p className={styles.conteudo}> -Criação de landing pages e componentes reutilizáveis</p>

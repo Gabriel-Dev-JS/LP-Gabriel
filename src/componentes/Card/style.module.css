@@ -1,17 +1,11 @@
 .containerCard {
-    /* width: 440px; */
     width: 25%;
     max-width: 400px;
-    /* height: 440px; */
     height: 300px;
     background-color: #FFFF;
     border-radius: 8px;
     padding: 6px;
     color: var(--preto);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 
 .containerCardFilho {
@@ -21,8 +15,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* justify-content: center; */
-    
 }
 
 .titulo {
