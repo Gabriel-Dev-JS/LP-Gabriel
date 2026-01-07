@@ -98,9 +98,10 @@
 }
 
 .sobre {
-    margin-left: 40px;
+    margin-left: 0px;
     width: 90%;
     display: flex;
+    align-items: start;
     flex-direction: column;
 }
 
