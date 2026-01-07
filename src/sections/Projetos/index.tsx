@@ -53,8 +53,10 @@ const Projetos:React.FC = () => {
             link: "https://github.com/Gabriel-Dev-JS/Backend-ToDo"
         },
         {
-            titulo: "Organizador Financeiro",
-            conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, para o melhor controle dos gastos mensais",
+            // titulo: "Organizador Financeiro",
+            // conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, para o melhor controle dos gastos mensais",
+            titulo: "Diamante Cortes",
+            conteudo: "Aplicativo para barbearia, agendamento de horarios para cortes de cabelo (em fase de desenvolvimento)",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <BiLogoPostgresql className={styles.iconesTecnologias}/>, <SiPrisma className={styles.iconesTecnologias}/>, <FaDocker className={styles.iconesTecnologias}/>, <SiJest className={styles.iconesTecnologias}/>],
             link: "https://github.com/Gabriel-Dev-JS/organizador_financeiro"
         }
