@@ -1,5 +1,6 @@
 import { BsDownload } from "react-icons/bs"
-import curriculo from "./Curriculo.pdf"
+import curriculo from "./Curriculo_Atualizado_2026.pdf"
+// import curriculo from "./Curriculo.pdf"
 import styles from "./style.module.css"
 
 const Curriculo:React.FC = () => {
@@ -23,7 +24,7 @@ const Curriculo:React.FC = () => {
                 </div>
                 <div>
                     <p className={styles.titulo}>Experiência Profissional</p>
-                    <p><span style={{fontWeight:"600"}}>Shopinfo — Desenvolvedor Júnior</span> (12/2024 – Atual)</p>
+                    <p><span style={{fontWeight:"600"}}>Shopinfo — Desenvolvedor Júnior</span> (12/2024 – 01/2026)</p>
                     <p className={styles.conteudo}>-Desenvolvimento de páginas e componentes utilizando VTEX Legacy e FastStore</p>
                     <p className={styles.conteudo}>-Criação de features em React e Typescript focadas em performance</p>
                     <p className={styles.conteudo}>-Desenvolvimento de plataforma de afiliados com Flask e PostgreSQL</p>
