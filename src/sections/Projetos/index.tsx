@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaDocker, FaNode } from "react-icons/fa";
 import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
-import { SiExpress, SiFlask, SiJest, SiPrisma, SiSqlite } from "react-icons/si";
+import { SiExpo, SiExpress, SiFlask, SiJest, SiPrisma, SiSqlite } from "react-icons/si";
+
 
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,14 +48,12 @@ const Projetos:React.FC = () => {
             link: "https://github.com/Gabriel-Dev-JS/GymPlanner"
         },
         {
-            titulo: "Backend ToDo", 
-            conteudo: "Backend de um ToDo, projeto caseiro e de rapido desenvolvimento, criado no intuito de auxiliar nas minhas tarefas diarias",
-            tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <SiSqlite className={styles.iconesTecnologias}/>],
-            link: "https://github.com/Gabriel-Dev-JS/Backend-ToDo"
+            titulo: "Schedule-Day", 
+            conteudo: "To-Do list feito com expo-react-native e expo-sqlite, criado para ser simples e útil, possui as quatro operações do crud, além da barra de pesquisa",
+            tecnologias: [<SiExpo className={styles.iconesTecnologias}/>, <SiSqlite className={styles.iconesTecnologias}/>],
+            link: "https://github.com/Gabriel-Dev-JS/schedule-day"
         },
         {
-            // titulo: "Organizador Financeiro",
-            // conteudo: "Criei uma carteira onde o usuario consegue gerir o seu salario, inputando os valores arrecadados e gastos durante o mês, para o melhor controle dos gastos mensais",
             titulo: "Diamante Cortes",
             conteudo: "Aplicativo para barbearia, agendamento de horarios para cortes de cabelo (em fase de desenvolvimento)",
             tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <BiLogoPostgresql className={styles.iconesTecnologias}/>, <SiPrisma className={styles.iconesTecnologias}/>, <FaDocker className={styles.iconesTecnologias}/>, <SiJest className={styles.iconesTecnologias}/>],
