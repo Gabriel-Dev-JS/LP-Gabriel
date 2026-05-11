@@ -1,6 +1,5 @@
 import { BsDownload } from "react-icons/bs"
-import curriculo from "./Curriculo_Atualizado_2026.pdf"
-// import curriculo from "./Curriculo.pdf"
+import curriculo from "./Gabriel_Curriculo_Desenvolvedor.pdf"
 import styles from "./style.module.css"
 
 const Curriculo:React.FC = () => {
