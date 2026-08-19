@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
-import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { FaCss3Alt, FaDocker, FaNode } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
-import { SiExpo, SiExpress, SiFlask, SiJest, SiPrisma, SiSqlite } from "react-icons/si";
+import { SiExpo, SiFlask, SiSqlite } from "react-icons/si";
 
 
 import { Navigation, Pagination } from "swiper/modules";
@@ -22,7 +21,7 @@ import "swiper/css/pagination";
 interface Projeto {
     titulo: string;
     conteudo: string;
-    tecnologias: ReactNode[];
+    tecnologias?: ReactNode[];
     link: string;
 }
 
@@ -54,10 +53,10 @@ const Projetos:React.FC = () => {
             link: "https://github.com/Gabriel-Dev-JS/schedule-day"
         },
         {
-            titulo: "Na Regua",
-            conteudo: "Aplicativo para barbearia, agendamento de horarios para cortes de cabelo (em fase de desenvolvimento)",
-            tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <BiLogoPostgresql className={styles.iconesTecnologias}/>, <SiPrisma className={styles.iconesTecnologias}/>, <FaDocker className={styles.iconesTecnologias}/>, <SiJest className={styles.iconesTecnologias}/>],
-            link: "https://github.com/Gabriel-Dev-JS/diamante_cortes"
+            titulo: "Saldo Planejado",
+            conteudo: "Aplicativo feito para o planejamento das contas durante o mês, substituindo a calculadora e o papel",
+            // tecnologias: [<SiExpress className={styles.iconesTecnologias}/>, <FaNode className={styles.iconesTecnologias}/>, <BiLogoTypescript className={styles.iconesTecnologias}/>, <BiLogoPostgresql className={styles.iconesTecnologias}/>, <SiPrisma className={styles.iconesTecnologias}/>, <FaDocker className={styles.iconesTecnologias}/>, <SiJest className={styles.iconesTecnologias}/>],
+            link: "https://total-restante.vercel.app/"
         }
     ]
 
@@ -80,7 +79,7 @@ const Projetos:React.FC = () => {
                     link={projeto.link}
                     tecnologia={
                         <ul className={styles.listaTecnologias}>
-                        {projeto.tecnologias.map((tech, index) => (
+                        {projeto.tecnologias?.map((tech, index) => (
                             <li key={index}>{tech}</li>
                         ))}
                         </ul>
@@ -99,7 +98,7 @@ const Projetos:React.FC = () => {
                     link={projeto.link}
                     tecnologia={
                     <ul className={styles.listaTecnologias}>
-                        {projeto.tecnologias.map((tech, index) => (
+                        {projeto.tecnologias?.map((tech, index) => (
                         <li key={index}>{tech}</li>
                         ))}
                     </ul>
